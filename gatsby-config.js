@@ -10,7 +10,7 @@ module.exports = {
             options: {
               typeName: "datablog",
               fieldName: "datablog",
-              url: "https://api.graph.cool/simple/v1/cj7q0q0q0q0q0101x0x0x0x0",
+              url: "https://api-us-west-2.graphcms.com/v2/ckwgzdgd50o6501xn84yxdlos/master",
           }
         },
       ],
