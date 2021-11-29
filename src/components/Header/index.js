@@ -60,9 +60,6 @@ const { logo, logoName, githubicon, linkedinicon, discordIcon, title, subtitle, 
                     <S.NavLink>{author}</S.NavLink>
                     <S.NavLink>{poems}</S.NavLink>
                 </S.NavBottom>
-                <S.NavLinks>
-
-                </S.NavLinks>
         </S.Container>
         </>
     );
