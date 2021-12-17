@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import * as S from './style';
+import { Link } from 'gatsby';
 
 export function Header() {
     const data = useStaticQuery(graphql`
@@ -45,9 +46,9 @@ const { logo, logoName, githubicon, linkedinicon, discordIcon, title, subtitle, 
                         <S.LogoName>{logoName}</S.LogoName>
                     </S.NavLinks>
                 <S.NavLinks>
-                        <S.icon src={githubicon.url} alt="github" />
-                        <S.icon src={linkedinicon.url} alt="linkedin" />
-                        <S.icon src={discordIcon.url} alt="discord" />
+                        <a href="https://github.com/marxxbluecode"><S.icon src={githubicon.url} alt="github" /></a>
+                        <a href="https://www.linkedin.com/in/marx-freitas-aa87aa19b/"><S.icon src={linkedinicon.url} alt="linkedin" /></a>
+                        <a href="https://discord.com/channels/@me"><S.icon src={discordIcon.url} alt="discord" /></a>
                 </S.NavLinks>
                 </S.Nav>
                 <S.Content>
@@ -55,10 +56,19 @@ const { logo, logoName, githubicon, linkedinicon, discordIcon, title, subtitle, 
                         <S.subtitle>{subtitle}</S.subtitle>
                 </S.Content>
                 <S.NavBottom>
-                    <S.NavLink>{home}</S.NavLink>
-                    <S.NavLink>{projects}</S.NavLink>
-                    <S.NavLink>{author}</S.NavLink>
-                    <S.NavLink>{poems}</S.NavLink>
+                    <S.NavLink>
+                        <Link to="/">{home}</Link>
+                    </S.NavLink>
+                    <S.NavLink>
+                        <Link to="/Projects">{projects}</Link>
+                    </S.NavLink>
+                    <S.NavLink>
+                        <Link to="/Author">{author}</Link>
+                    </S.NavLink>
+                    <S.NavLink>
+                        <Link to="/Poems">{poems}</Link>
+                    </S.NavLink>
+                   
                 </S.NavBottom>
         </S.Container>
         </>

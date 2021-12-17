@@ -16,6 +16,7 @@ export const Content = styled.div`
     justify-content: space-between;
     width: 80vw;
     height: auto;
+    
 `
 export const MainTitle = styled.h1`
     font-size: 3.3vw;
@@ -23,7 +24,11 @@ export const MainTitle = styled.h1`
     margin-bottom: 1.5vw;
     color: #1e234a;
     font-family: "IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    @media (max-width: 425px) {
+        font-size: 5vw;
+    }
 `
+
 export const MainParagraph = styled.p`
     font-size: 1.66vw;
     font-weight: normal;
@@ -33,6 +38,9 @@ export const MainParagraph = styled.p`
     color: #1e234a;
     margin-bottom: 2.5vw;
     font-family: "IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    @media (max-width: 425px) {
+        font-size: 2vw;
+    }
 `
 export const Cachtphrase = styled.p`
     font-size: 2vw;

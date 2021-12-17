@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import * as S from './style';
+import { Link } from 'gatsby';
 
 export function Footer() {
     const data = useStaticQuery(graphql`
@@ -17,17 +18,17 @@ export function Footer() {
         }
 `);
 
-    const { copyright, home, projects, author, poems } = data.datablog.footers[0];
+    const {copyright, home, projects, author, poems } = data.datablog.footers[0];
 
     return (
         <>
         <S.Container>
             <S.Copyright>{copyright}</S.Copyright> 
             <S.Boxlinks>
-                <S.Link to={home}>Home</S.Link>
-                <S.Link to={projects}>Projects</S.Link>
-                <S.Link to={author}>Author</S.Link>
-                <S.Link to={poems}>Poems</S.Link>
+                <Link to= "/">{home}</Link>
+                <Link to= "/Projects">{projects}</Link>
+                <Link to= "/Author">{author}</Link>
+                <Link to= "/Poems">{poems}</Link>
             </S.Boxlinks>
         </S.Container>
         </>

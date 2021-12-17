@@ -22,13 +22,8 @@ export const Boxlinks = styled.ul`
     opacity: .7;
     padding: 0vw 2vw 0vw 2vw;
     -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
-`
-export const Link = styled.li`
-    font-size: .9vw;
-    margin-right: 1vw;
-    list-style: none;
-    &:hover {
-        color: #fff;
-        opacity: 1;
+    @media (max-width: 425px) {
+        font-size: 1.5vw;
+        width: 30vw;
     }
 `
